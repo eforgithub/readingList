@@ -32,6 +32,8 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v1.1.0
+        with:
+          publish_branch: main
         env:
           PUBLISH_DIR: .site
           PUBLISH_BRANCH: main
