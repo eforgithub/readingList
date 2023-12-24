@@ -37,5 +37,5 @@ jobs:
 
   build-deploy:
     needs: append-to-reading-list
-    uses: ./.github/workflows/build-deploy.yml
+    uses: ./.github/workflows/build.yml
     secrets: inherit
