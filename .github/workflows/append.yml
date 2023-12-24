@@ -35,7 +35,6 @@ jobs:
           git commit -m "Automated reading list update on $(date)"
           git push -u origin master
 
-  build-deploy:
+  build-site:
     needs: append-to-reading-list
     uses: ./.github/workflows/build.yml
-    secrets: inherit
