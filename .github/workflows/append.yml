@@ -29,7 +29,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config user.email "eforsub@gmail.com"
+          git config user.email "bigdataseo@gmail.com"
           git config user.name "Automatic update"
           git add readingList.csv
           git commit -m "Automated reading list update on $(date)"
