@@ -1,3 +1,4 @@
 url,title,description,image,date,hnurl
 
 https://www.tdpain.net/blog/a-year-of-reading,I Tracked Everything I Read on the Internet for a Year :: Thomas Pain,,https://www.tdpain.net/blog/a-year-of-reading/articlesOverTime.png,2023-12-25T18:50:57.248586793Z,https://news.ycombinator.com/item?id=32759786
+https://codeburst.io/using-github-actions-with-repository-dispatch-event-c113a45b3948,Using Github Actions with Repository Dispatch Event | by Sanjar Kairosh | codeburst,"If you ever set up a Github Actions workflow on a repository, you will recognize the YAML file that executes steps upon any code you push…",https://miro.medium.com/v2/resize:fit:1200/1*JdXNjkwq9R5hyZuzWGDF_Q.jpeg,2023-12-25T19:05:47.295131173Z,
