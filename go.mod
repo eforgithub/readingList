@@ -1,6 +1,6 @@
 module github.com/eforgithub/readingList
 
-go 1.19
+go 1.21.5
 
 require (
 	github.com/go-playground/validator v9.31.0+incompatible
