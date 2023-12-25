@@ -10,7 +10,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/eforgithub/readingList/transport"
 	"github.com/jszwec/csvutil"
 	g "github.com/maragudk/gomponents"
 	c "github.com/maragudk/gomponents/components"
@@ -102,14 +101,16 @@ func makeListHTML(groups []*entryGroup) g.Node {
 	numGroups := len(groups)
 
 	var subsections []g.Node
+	import g "github.com/maragudk/gomponents"
+
 	for i := numGroups - 1; i >= 0; i -= 1 {
 		group := groups[i]
-		subsections = append(subsections, A(g.Attr("href", "#"+group.ID), g.Textf("%s %d", group.Date.Month().String()[:3], group.Date.Year())))
+		subsections = append(subsections, g.A(g.Attr("href", "#"+group.ID), g.Textf("%s %d", group.Date.Month().String()[:3], group.Date.Year())))
 	}
 
 	parts := []g.Node{
-		Br(),
-		Span(g.Text("Jump to :: "), g.Group(g.Map(len(subsections), func(i int) g.Node {
+		g.Br(),
+		g.Span(g.Text("Jump to :: "), g.Group(g.Map(len(subsections), func(i int) g.Node {
 			n := subsections[i]
 			if i != len(subsections)-1 {
 				n = g.Group([]g.Node{n, g.Text(" :: ")})
