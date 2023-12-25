@@ -33,7 +33,7 @@ jobs:
           git config user.name "Automatic update"
           git add readingList.csv
           git commit -m "Automated reading list update on $(date)"
-          git push -u origin main
+          git push -u origin master
 
   build-site:
     needs: append-to-reading-list
