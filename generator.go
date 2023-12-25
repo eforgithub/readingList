@@ -108,10 +108,8 @@ func makeListHTML(groups []*entryGroup) g.Node {
 
 	parts := []g.Node{
 		Br(),
-		Span(g.Text("Jump to :: "), g.Group(g.Map(subsections, func(i int, n g.Node) g.Node {
-			if i != len(subsections)-1 {
-				n = g.Group([]g.Node{n, g.Text(" :: ")})
-			}
+		Span(g.Text("Jump to :: "), g.Group(g.Map(subsections, func(n g.Node) g.Node {
+			// Your transformation logic here
 			return n
 		}))),
 	}
